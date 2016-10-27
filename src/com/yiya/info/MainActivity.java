@@ -44,10 +44,11 @@ public class MainActivity extends Activity {
 
 		// get package info
 
-		info = getPackageInfo();
+		
 		
 		new Thread() {
 			public void run() {
+				info = getPackageInfo();
 				MyAdapter adapter = new MyAdapter();
 				list.setAdapter(adapter);
 				setOnScrollListener();
